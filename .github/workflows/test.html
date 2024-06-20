@@ -1,0 +1,193 @@
+<!-- saved from url=(0054)file:///C:/Users/Zafar/Downloads/HTML%20TEST/test.html -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-top: 10px;
+        }
+
+        .container {
+            width: 80%;
+            margin-top: 80px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-weight: bold; /* Make currency rate numbers bold */
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .notes {
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .flag-img {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+
+        .highlight {
+            background-color: #e0f0ff;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #3e8e41;
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        /* Adjust covering text for the logo */
+        .covering-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: auto;
+            padding: 10px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Place the company logo at the left side top -->
+    <div class="covering-text">Al Bader Exchange</div>
+    <img src="./test_files/ABE.png" alt="Al Bader Exchange Logo" class="flag-img">
+    <h1>Send money to your loved ones at the best rates</h1>
+
+    <!-- Add a short introduction paragraph that explains the benefits of using your service -->
+    <p style="text-align: center; font-size: 18px;">Al Bader Exchange is a trusted and reliable money transfer service that offers you the best exchange rates and low fees. Whether you want to send money to India, Pakistan, Bangladesh, Nepal, Philippines, or Indonesia, we have you covered. You can send money online, by phone, or at any of our branches across the UAE.</p>
+    <!-- Add a call-to-action button that leads to a form where visitors can enter their details and start the transfer process -->
+    <p style="text-align: center;"><button class="button" onclick="window.location.href='https://albaderexchange.ae';">Start Your Transfer Now</button></p>
+    <table>
+        <tbody>
+            <tr>
+                <th>Country Flag</th>
+                <th>Currency Name</th>
+                <th>Currency Symbol</th>
+                <th>Today's Rate (against AED)</th>
+            </tr>
+            <tr class="highlight">
+                <td><img class="flag-img" src="./test_files/in.png" alt="India"></td>
+                <td>Indian Rupee</td>
+                <td>INR</td>
+                <td><input type="number" value="20.35" min="0" step="0.01"></td>
+            </tr>
+            <tr>
+                <td><img class="flag-img" src="./test_files/pk.png" alt="Pakistan"></td>
+                <td>Pakistani Rupee</td>
+                <td>PKR</td>
+                <td><input type="number" value="219.87" min="0" step="0.01"></td>
+            </tr>
+            <tr class="highlight">
+                <td><img class="flag-img" src="./test_files/bd.png" alt="Bangladesh"></td>
+                <td>Bangladeshi Taka</td>
+                <td>BDT</td>
+                <td><input type="number" value="26.42" min="0" step="0.01"></td>
+            </tr>
+            <tr>
+                <td><img class="flag-img" src="./test_files/np.png" alt="Nepal"></td>
+                <td>Nepalese Rupee</td>
+                <td>NPR</td>
+                <td><input type="number" value="32.18" min="0" step="0.01"></td>
+            </tr>
+            <tr class="highlight">
+                <td><img class="flag-img" src="./test_files/ph.png" alt="Philippines"></td>
+                <td>Philippine Peso</td>
+                <td>PHP</td>
+                <td><input type="number" value="48.23" min="0" step="0.01"></td>
+            </tr>
+            <tr>
+                <td><img class="flag-img" src="./test_files/id.png" alt="Indonesia"></td>
+                <td>Indonesian Rupiah</td>
+                <td>IDR</td>
+                <td><input type="number" value="14,230.00" min="0" step="0.01"></td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="notes">* The rates are will Upadte any time  For more information, please contact our customer service. </p>
+<footer>
+        <!-- Replace the contact number, email ID, and website with the ones provided by the user -->
+        Contact Number: +971 6344100<br>
+        Email ID: info@badrex.ae<br>
+        Website: https://albaderexchange.ae
+    </footer>
+</body>
+</html>
