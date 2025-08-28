@@ -6,6 +6,9 @@ import { sequelize } from './lib/sequelize.js';
 import { registerModels } from './models/index.js';
 import { authRouter } from './routes/auth.js';
 import { tenantRouter } from './routes/tenants.js';
+import { customersRouter } from './routes/customers.js';
+import { quotationsRouter } from './routes/quotations.js';
+import { invoicesRouter } from './routes/invoices.js';
 
 const app = express();
 
@@ -19,6 +22,9 @@ app.get('/health', (_req: Request, res: Response) => {
 
 app.use('/auth', authRouter);
 app.use('/tenants', tenantRouter);
+app.use('/customers', customersRouter);
+app.use('/quotations', quotationsRouter);
+app.use('/invoices', invoicesRouter);
 
 // Error handler
 app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
